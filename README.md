@@ -2,7 +2,9 @@
 # **Multilinear Regression: A Comprehensive Exploration**
 
 ## **Overview**
-This project delves into **Multilinear Regression**, a statistical method that leverages two or more independent variables to predict the outcome of a dependent variable. The analysis spans its historical development, mathematical underpinnings, applications, and limitations, offering a thorough understanding of this powerful analytical tool.
+This repository delves into **Multilinear Regression**, a statistical method that uses multiple independent variables to predict the outcome of a dependent variable. The analysis spans its historical development, mathematical foundations, applications, and limitations, offering a thorough understanding of this powerful analytical tool.
+ 
+
 ---
 
 ## **Introduction**
@@ -18,8 +20,8 @@ The evolution of regression analysis began with Francis Galton’s "regression t
 ## **Mathematical Foundations**
 ### **Linear Algebra Concepts**
 Key concepts include:
-- **Matrices and Vectors**: Used to represent the independent variables and coefficients.
-- **Matrix Transpose and Multiplication**: Fundamental for deriving the normal equation.
+- **Matrices and Vectors**: Represent the independent variables and coefficients.
+- **Matrix Transpose and Multiplication**: Used for deriving the normal equation.
 - **Determinants and Inverses**: Necessary for solving regression coefficients in matrix form.
 
 ### **Statistical Concepts**
@@ -30,15 +32,19 @@ Key concepts include:
 
 ### **Multilinear Regression Model**
 The model is expressed as:
-\[ Y = X\beta + \epsilon \]
+```
+Y = Xβ + ε
+```
 Where:
-- \(Y\): Dependent variable (e.g., predicted output).
-- \(X\): Matrix of independent variables (predictors).
-- \(\beta\): Coefficient vector (weights for predictors).
-- \(\epsilon\): Error term (unexplained variance).
+- `Y`: Dependent variable (e.g., predicted output).
+- `X`: Matrix of independent variables (predictors).
+- `β`: Coefficient vector (weights for predictors).
+- `ε`: Error term (unexplained variance).
 
-Using the **Least Squares Estimation**, the coefficients (\(\beta\)) are determined to minimize the RSS:
-\[ \beta = (X^TX)^{-1}X^TY \]
+Using the **Least Squares Estimation**, the coefficients (`β`) are determined to minimize the RSS:
+```
+β = (XᵀX)⁻¹XᵀY
+```
 
 ### **Gauss-Markov Theorem**
 The Ordinary Least Squares (OLS) estimator is proven to be the **Best Linear Unbiased Estimator (BLUE)** under specific assumptions:
@@ -55,6 +61,7 @@ In soccer performance analysis, multilinear regression revealed key factors affe
 - Player minutes played.
 - Ball possession percentages.
 - Fouls and disciplinary actions.
+
 The model highlighted specific players whose contributions significantly correlated with match outcomes, offering actionable insights for team strategy.
 
 ### **2. Energy Forecasting**
@@ -92,4 +99,3 @@ By comparing Single Linear Regression (SLR) and Multilinear Regression (MLR), re
 - Kutner, M. H., et al. *Applied Linear Statistical Models*. McGraw-Hill, 2005.  
 
 For additional references, see the included paper.
-For a simple application of multilinear regression, see the attached code.
